@@ -42,7 +42,7 @@ export default function Transactions() {
 
   const fetchTransactionsData = () => {
     // `http://localhost:9000/api/accounts/${account}/transactions`
-    fetch(`/api/accounts/${account}/transactions`)
+    fetch(`/prod/api/accounts/${account}/transactions`)
       .then(response => {
         return response.json()
       })

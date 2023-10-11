@@ -40,7 +40,7 @@ export default function Accounts() {
 
     const fetchAccountsData = () => {
         // "http://localhost:9000/api/accounts"
-        fetch("/api/accounts")
+        fetch("/prod/api/accounts")
             .then(response => {
                 return response.json()
             })
